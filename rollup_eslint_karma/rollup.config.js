@@ -6,7 +6,7 @@ export default {
   entry: "src/index.js",
   format: "iife",
   moduleName: "template",
-  dest: "bundle.js",
+  dest: "build/bundle.js",
   sourceMap: 'inline',
   plugins: [
     nodeResolve({ jsnext: true }),
