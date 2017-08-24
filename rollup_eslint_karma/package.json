@@ -4,7 +4,7 @@
   "description": "base Template to work with rollup Karma and eslint ",
   "main": "index.js",
   "scripts": {
-		"dev": "rollup -c --watch",
+    "dev": "rollup -c --watch",
     "reload": "livereload 'build/' -d",
     "watch": "npm-run-all --parallel reload dev",
     "test": "npm run -s test:build && npm run -s test:run",
