@@ -6,7 +6,7 @@ document.write(
   );
 console.log('hello lovely');
 
-const test = Rx.Observable.of(1,2,3);
+const test = Rx.Observable.of(1,2,3, 4,5);
 test.subscribe(x=> console.log(x));
 
 
