@@ -1,6 +1,6 @@
 import nodeResolve from "rollup-plugin-node-resolve";
 //    uglify = require("rollup-plugin-uglify");
-//import babel from 'rollup-plugin-babel';
+import babel from 'rollup-plugin-babel';
 import eslint from 'rollup-plugin-eslint';
 export default {
   entry: "src/index.js",
@@ -16,11 +16,11 @@ export default {
       ]
     }),
 
-		/*activate if babel should be used			
-		*babel({
-		*	exclude: 'node_modules/**'
-		*})
-   */
+		//activate if babel should be used			
+		babel({
+			exclude: 'node_modules/**'
+		})
+   
 		// uglify(), Turn back on uglify for production
   ]
 };
